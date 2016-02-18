@@ -17,5 +17,19 @@ public class Main {
         char ch;
         int i;
 
+        iQ = q1;
+
+        for (i=0; i<10; i++)
+            iQ.put((char) ('A' + 1));
+
+        System.out.print("Content of fixed queue: ");
+        for (i=0; i<10; i++){
+            ch = iQ.get();
+            System.out.print(ch);
+        }
+        System.out.println();
+
+
+
     }
 }
