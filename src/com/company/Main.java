@@ -1,35 +1,49 @@
 package com.company;
 
-import com.company.IFaces.ICharQ;
-import com.company.IQClasses.CircularQueue;
-import com.company.IQClasses.DynQueue;
-import com.company.IQClasses.FixedQueue;
+import com.company.Classes.StackFpFg;
+import com.company.Classes.StackFpLg;
 
 public class Main {
 
     public static void main(String[] args) {
-        FixedQueue q1 = new FixedQueue(10);
-        CircularQueue q3 = new CircularQueue(10);
-        DynQueue q2 = new DynQueue(5);
+        StackFpFg stack1 = new StackFpFg(0);
+        StackFpLg stack2 = new StackFpLg(0);
 
-        ICharQ iQ;
+        for (int i=0; i<10; i++)
+            stack1.put((char) ('A' + i));
 
-        char ch;
-        int i;
+        System.out.println("First put, First get");
+        System.out.println("stack1 size: " + stack1.getLength());
 
-        iQ = q1;
+        for (int i=0; i<5; i++)
+            System.out.print(stack1.get() + " ");
 
-        for (i=0; i<10; i++)
-            iQ.put((char) ('A' + 1));
-
-        System.out.print("Content of fixed queue: ");
-        for (i=0; i<10; i++){
-            ch = iQ.get();
-            System.out.print(ch);
-        }
         System.out.println();
+        System.out.println("stack1 size: " + stack1.getLength());
 
+        for (int i=0; i<5; i++)
+            System.out.print(stack1.get() + " ");
 
+        System.out.println();
+        System.out.println("stack1 size: " + stack1.getLength());
+
+        for (int i=0; i<10; i++)
+            stack2.put((char) ('A' + i));
+
+        System.out.println("First put, Last get");
+        System.out.println("stack1 size: " + stack2.getLength());
+
+        for (int i=0; i<5; i++)
+            System.out.print(stack2.get() + " ");
+
+        System.out.println();
+        System.out.println("stack1 size: " + stack2.getLength());
+
+        for (int i=0; i<5; i++)
+            System.out.print(stack2.get() + " ");
+
+        System.out.println();
+        System.out.println("stack1 size: " + stack2.getLength());
 
     }
 }
