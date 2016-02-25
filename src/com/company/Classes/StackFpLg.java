@@ -36,4 +36,9 @@ public class StackFpLg extends StackMain implements ICharQ, IQueueProperties {
 
         return lastSymb;
     }
+
+    public String printInfo() {
+        String info = "Stack is LIFO | " + super.printInfo();
+        return info;
+    }
 }

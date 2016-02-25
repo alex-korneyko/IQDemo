@@ -28,4 +28,12 @@ public class StackMain {
         stack2[stack.length] = symb;
         stack = stack2;
     }
+
+    public String printInfo(){
+        String info = "Stack length: " + stack.length + " | Contains: ";
+        for(int i=0; i<stack.length; i++)
+            info = info + stack[i] + " ";
+
+        return info;
+    }
 }

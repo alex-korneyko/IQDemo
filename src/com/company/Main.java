@@ -12,38 +12,36 @@ public class Main {
         for (int i=0; i<10; i++)
             stack1.put((char) ('A' + i));
 
-        System.out.println("First put, First get");
-        System.out.println("stack1 size: " + stack1.getLength());
+        System.out.println(stack1.printInfo());
 
         for (int i=0; i<5; i++)
             System.out.print(stack1.get() + " ");
-
         System.out.println();
-        System.out.println("stack1 size: " + stack1.getLength());
+
+        System.out.println(stack1.printInfo());
 
         for (int i=0; i<5; i++)
             System.out.print(stack1.get() + " ");
-
         System.out.println();
-        System.out.println("stack2 size: " + stack1.getLength());
+
+        System.out.println(stack1.printInfo());
 
         for (int i=0; i<10; i++)
             stack2.put((char) ('A' + i));
 
-        System.out.println("First put, Last get");
-        System.out.println("stack2 size: " + stack2.getLength());
+        System.out.println(stack2.printInfo());
 
         for (int i=0; i<5; i++)
             System.out.print(stack2.get() + " ");
-
         System.out.println();
-        System.out.println("stack2 size: " + stack2.getLength());
+
+        System.out.println(stack2.printInfo());
 
         for (int i=0; i<5; i++)
             System.out.print(stack2.get() + " ");
-
         System.out.println();
-        System.out.println("stack2 size: " + stack2.getLength());
+
+        System.out.println(stack2.printInfo());
 
     }
 }

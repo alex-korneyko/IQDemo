@@ -37,4 +37,9 @@ public class StackFpFg extends StackMain implements ICharQ, IQueueProperties {
         return firstSymb;
     }
 
+    public String printInfo(){
+        String info = "Stack is FIFO | " + super.printInfo();
+        return info;
+    }
+
 }
